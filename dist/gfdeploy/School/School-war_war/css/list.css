@@ -1,0 +1,57 @@
+/* 
+    Created on : 21/03/2020, 08:45:49 PM
+    Author     : Juan Pablo
+*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#e1e1e1; 
+}
+
+main{
+    width: 90%;
+    background-color: white;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+hr{
+    color:black;
+    height: 2px;
+}
+
+main h1{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Barlow',serif;
+}
+
+.studentTable{
+    width: 100%;
+}
+
+.studentTable table{
+    width: 100%;
+}
+.studentTable th{
+    background-color: #e1e1e1;
+    border: 1px solid black;
+    color:black;
+    font-family: 'Barlow', sans-serif;
+}
+
+.rowStudent td{
+    flex: 1 1 20%;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    border: 1px solid #a1a1a1;
+}

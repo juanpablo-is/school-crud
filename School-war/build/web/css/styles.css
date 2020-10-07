@@ -1,0 +1,210 @@
+/* 
+    Created on : 20/03/2020, 10:01:08 PM
+    Author     : Juan Pablo
+*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.alert{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    padding: 5px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.alert h2{
+    font-size: 14px !important;
+    color:white;
+}
+
+.errorMensaje{
+    border: 1px solid red;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.informacionIndependiente{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 60%;
+    width: 100vw;
+    height: 100%;
+}
+
+.informacionForeana{
+    position: relative;
+    flex: 1 1 40%;
+    height: 100%;
+    width: 100vw;    
+    border-top: 4px solid #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionStudent{
+    position: relative;
+    border-right: 4px solid #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+
+}
+
+.sectionCourse{
+    position: relative;
+    border-left: 4px solid #e1e1e1;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*================================================================================================*/
+
+.information{
+    width: 100%;
+    border-bottom: 4px solid #e1e1e1;
+    flex: 1 1 60%;
+}
+
+.studentTable{
+    width: 100%;
+    border-top: 4px solid #e1e1e1;
+    flex: 1 1 40%;  
+}
+
+.information h2{
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#form,#formForeana{
+    width: 100%;
+}
+
+#form div,#formForeana div{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#form div:last-child{
+    width: 100%;
+    margin: 0;
+}
+
+#form label,#formForeana label {
+    height: 30px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    flex: 1 1 40%;
+}
+
+#form :not(input[type="submit"]),#formForeana :not(input[type="submit"]){
+    flex: 1 1 60%;
+}
+
+input[type="text"],input[type="date"],input[type="number"]{
+    width: 100%;
+    height: 30px;
+}
+
+input[type="submit"]{
+    padding: 5px 30px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color:white;
+}
+
+input[type="submit"]:hover{
+    opacity: .7;
+}
+
+#formForeana{
+    width: 70%;
+    margin: 0 auto;    
+}
+
+#btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center;
+}
+
+#addButton, .alertAdd{
+    background-color: #5CB85C;
+}
+
+#editButton, .alertEdit{
+    background-color: #5BC0DE;
+}
+
+#deleteButton,.alertDelete{
+    background-color: #D9534F;
+}
+
+#searchButton{
+    background-color: #8EA4B9;
+}
+
+#listButton{
+    background-color: white;
+    color: #5f5f5f;
+    border: 2px solid #5f5f5f;
+}
+
+
+/*================================================================================================*/
+
+.studentTable table{
+    width: 100%;
+}
+.studentTable th{
+    background-color: #e1e1e1;
+    border: 1px solid black;
+    color:black;
+    font-family: 'Barlow', sans-serif;
+}
+
+.rowStudent td{
+    flex: 1 1 20%;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    border: 1px solid #a1a1a1;
+}
+
